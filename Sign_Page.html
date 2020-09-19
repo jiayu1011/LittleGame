@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Page</title>
+    <link rel="stylesheet" href="css/Sign_Page.css" type="text/css">
+    <script src="js/Sign_Page.js"></script>
+</head>
+<body>
+    <div class="loader">
+        <div class="loader-inner pacman">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+    </div>
+    <div id="center-body">
+        <div class="flex-item">
+            <span class="small-title">Username or email address</span>
+            <input id="username" type="text">
+        </div>
+        <div class="flex-item">
+            <span class="small-title">Password</span><a class="blue" id="forgot" href="#" onclick="Nothing()">Forgot password?</a>
+            <input id="password" type="password">
+        </div>
+        <div class="flex-item">
+            <button type="submit" id="submit" onclick="Check()">Sign in</button>
+        </div>
+    </div>
+    
+</body>
+</html>

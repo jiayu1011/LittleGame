@@ -1,0 +1,133 @@
+html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#whole-body {
+    background-color: rgb(255, 223, 223);
+    height: 100%;
+    width: 100%;
+}
+
+button {
+    height: 80px;
+    width: 150px;
+    transition: height 0.3s, width 0.3s, font-size 0.3s;
+    font-size: 20px;
+    font-weight: 800;
+    outline: none;
+    cursor: pointer;
+}
+
+#start:hover {
+    height: 90px;
+    width: 180px;
+    font-size: 23px;
+}
+
+#restart:hover {
+    height: 90px;
+    width: 180px;
+    font-size: 23px;
+}
+
+#start {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    letter-spacing: 4px;
+    border: 1px solid rgb(248, 47, 47);
+    border-radius: 30px;
+    background-color: rgb(248, 47, 47);
+}
+
+#restart {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(248, 47, 47);
+    letter-spacing: 4px;
+    border: 1px solid rgb(248, 47, 47);
+    border-radius: 30px;
+    background-color: rgba(248, 47, 47, 0.1);
+}
+
+#bomb {
+    width: 60px;
+    height: 60px;
+}
+
+
+#PlayButton {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 75px;
+}
+
+#DogVideo {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#SurpriseButton {
+    width: 130px;
+    height: 100px;
+    background: #df5a0e;
+    color: #ffffff;
+    position: absolute;
+    font: bold 14px '微软雅黑', Verdana, Arial, Helvetica, sans-serif;
+    padding: 10px;
+    animation: animated_div 5s infinite;
+    border: 0;
+    border-radius: 40%;
+}
+
+@keyframes animated_div {
+    0% {
+        transform: rotate(0deg);
+        left: 200px;
+    }
+
+    25% {
+        transform: rotate(20deg);
+        left: 450px;
+    }
+
+    50% {
+        transform: rotate(180deg);
+        left: 700px;
+    }
+
+    55% {
+        transform: rotate(0deg);
+        left: 700px;
+    }
+
+    70% {
+        transform: rotate(30deg);
+        left: 450px;
+        background: #1ec7e6;
+    }
+
+    100% {
+        transform: rotate(-360deg);
+        left: 200px;
+    }
+}
